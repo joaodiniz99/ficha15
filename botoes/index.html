@@ -26,7 +26,7 @@
         content: '';
         top: 0;
         left: 0;
-        width: 100%;
+        width: 0;
         height: 3px;
         background-color: blueviolet;
       }
@@ -35,9 +35,13 @@
         content: '';
         bottom: 0;
         right: 0;
-        width: 100%;
+        width: 0;
         height: 3px;
         background-color: blueviolet;
+      }
+      #anim2:hover::before,
+      #anim2:hover::after {
+        width: 100%;
       }
       #anim1 {
         border: 3px solid blueviolet;
