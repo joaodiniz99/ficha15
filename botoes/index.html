@@ -36,6 +36,19 @@
         height: 50px;
         width: 15px;
         background-color: blueviolet;
+
+        animation: animacao 1.5s infinite;
+      }
+      @keyframes animacao {
+        0% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(2);
+        }
+        100% {
+          transform: scaleY(1);
+        }
       }
       .botao {
         width: 150px;
