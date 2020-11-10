@@ -12,7 +12,31 @@
     <button class="botao" id="anim2">HIPERMÉDIA</button>
     <button class="botao" id="anim5"><span id="anim5-span">HIPERMÉDIA</span></button>
     <button class="botao" id="anim6"><span id="text">HIPERMÉDIA</span></button>
+    <div class="loader">
+      <div class="barra1"></div>
+      <div class="barra2"></div>
+      <div class="barra3"></div>
+      <div class="barra4"></div>
+      <div class="barra5"></div>
+    </div>
     <style>
+      .loader {
+        height: 100px;
+        width: 95px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .barra1,
+      .barra2,
+      .barra3,
+      .barra4,
+      .barra5 {
+        height: 50px;
+        width: 15px;
+        background-color: blueviolet;
+      }
       .botao {
         width: 150px;
         height: 80px;
