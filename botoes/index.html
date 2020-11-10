@@ -10,7 +10,7 @@
     <button class="botao" id="anim2">HIPERMÉDIA</button>
     <button class="botao" id="anim2">HIPERMÉDIA</button>
     <button class="botao" id="anim2">HIPERMÉDIA</button>
-    <button class="botao" id="anim5">HIPERMÉDIA</button>
+    <button class="botao" id="anim5"><span id="anim5-span">HIPERMÉDIA</span></button>
     <style>
       .botao {
         width: 150px;
@@ -46,6 +46,32 @@
 
         transition-delay: 200ms;
         transition-duration: 200ms;
+      }
+      #anim5-span::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 0;
+        background-color: blueviolet;
+        transition-delay: 400ms;
+        transition-duration: 200ms;
+      }
+      #anim5-span::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 0;
+        background-color: blueviolet;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+      }
+      #anim5-span:hover::before,
+      #anim5-span:hover::after {
+        height: 100%;
       }
       #anim5:hover::before,
       #anim5:hover::after {
