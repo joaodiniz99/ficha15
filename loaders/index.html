@@ -73,6 +73,24 @@
       stroke-dasharray: 150 50 150 50;
       stroke-dashoffset: 75;
     }
+    .loader3::before,
+    .loader4::before,
+    .loader5::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 74px;
+      left: 38px;
+      background: limegreen;
+      display: block;
+      transform: translate(-36px, -36px);
+    }
+    .triangle::before {
+      left: 42px;
+      transform: translate(-20px, -36px);
+    }
     .loader2 {
       height: 112px;
       width: 112px;
