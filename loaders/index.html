@@ -64,14 +64,17 @@
     polygon {
       stroke-dasharray: 145 76 145 76;
       stroke-dashoffset: 0;
+      animation: pathTriangle 3s cubic-bezier(.785, .135, .15, .86) infinite;
     }
     rect {
       stroke-dasharray: 192 64 192 64;
       stroke-dashoffset: 0;
+      animation: pathTriangle 3s cubic-bezier(.785, .135, .15, .86) infinite;
     }
     circle {
       stroke-dasharray: 150 50 150 50;
       stroke-dashoffset: 75;
+      animation: pathTriangle 3s cubic-bezier(.785, .135, .15, .86) infinite;
     }
     .loader3::before,
     .loader4::before,
@@ -86,10 +89,76 @@
       background: limegreen;
       display: block;
       transform: translate(-36px, -36px);
+      animation: dotRect 3s cubic-bezier(.785, .135, .15, .86) infinite;
     }
     .triangle::before {
       left: 42px;
       transform: translate(-20px, -36px);
+      animation: dotTriangle 3s cubic-bezier(.785, .135, .15, .86) infinite;
+    }
+    @keyframes pathTriangle {
+      33% {
+        stroke-dashoffset: 74;
+      }
+      66% {
+        stroke-dashoffset: 147;
+      }
+      100% {
+        stroke-dashoffset: 221;
+      }
+    }
+    @keyframes pathRect {
+      25% {
+        stroke-dashoffset: 64;
+      }
+      50% {
+        stroke-dashoffset: 128;
+      }
+      75% {
+        stroke-dashoffset: 192;
+      }
+      100% {
+        stroke-dashoffset: 256;
+      }
+    }
+    @keyframes pathCircle {
+      25% {
+        stroke-dashoffset: 125;
+      }
+      50% {
+        stroke-dashoffset: 175;
+      }
+      75% {
+        stroke-dashoffset: 225;
+      }
+      100% {
+        stroke-dashoffset: 275;
+      }
+    }
+    @keyframes dotRect {
+      25% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(36px, -36px);
+      }
+      75% {
+        transform: translate(0, -72px);
+      }
+      100% {
+        transform: translate(-36px, -36px);
+      }
+    }
+    @keyframes dotTriangle {
+      33% {
+        transform: translate(0, 0);
+      }
+      66% {
+        transform: translate(20px, -36px);
+      }
+      100% {
+        transform: translate(-20px, -36px);
+      }
     }
     .loader2 {
       height: 112px;
