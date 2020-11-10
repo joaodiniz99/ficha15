@@ -8,8 +8,9 @@
   <body>
     <button class="botao" id="anim1">HIPERMÉDIA</button>
     <button class="botao" id="anim2">HIPERMÉDIA</button>
-    <button class="botao" id="anim3">HIPERMÉDIA</button>
-    <button class="botao" id="anim4">HIPERMÉDIA</button>
+    <button class="botao" id="anim2">HIPERMÉDIA</button>
+    <button class="botao" id="anim2">HIPERMÉDIA</button>
+    <button class="botao" id="anim5">HIPERMÉDIA</button>
     <style>
       .botao {
         width: 150px;
@@ -19,6 +20,36 @@
         border: none;
         color: blueviolet;
         cursor: pointer;
+      }
+      #anim5 {
+        position: relative;
+      }
+      #anim5::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: blueviolet;
+
+        transition-duration: 200ms;
+      }
+      #anim5::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 3px;
+        background-color: blueviolet;
+
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+      }
+      #anim5:hover::before,
+      #anim5:hover::after {
+        width: 100%;
       }
       #anim4 {
         position: relative;
