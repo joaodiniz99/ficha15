@@ -6,16 +6,24 @@
     <title>Botões</title>
   </head>
   <body>
-    <button class="botao"></button>
+    <button class="botao" id="anim1">HIPERMÉDIA</button>
     <style>
       .botao {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 80px;
         margin: 20px;
-        background-color: blueviolet;
+        background-color: transparent;
+        border: none;
+        color: blueviolet;
+        cursor: pointer;
       }
-      .botao:hover {
-        width: 400px;
+      #anim1 {
+        border: 3px solid blueviolet;
+        transition-duration: 200ms;
+      }
+      #anim1:hover {
+        background-color: blueviolet;
+        color: white;
       }
     </style>
   </body>
