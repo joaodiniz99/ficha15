@@ -21,7 +21,8 @@
       }
       #anim3 {
         position: relative;
-        color: white;
+        
+        transition-duration: 200ms;
       }
       #anim3::after {
         position: absolute;
@@ -32,6 +33,12 @@
         height: 100%;
         background-color: blueviolet;
         z-index: -1;
+      }
+      #anim3:hover {
+        color: white;
+      }
+      #anim3:hover::after {
+        height: 100%;
       }
       #anim2 {
         position: relative;
