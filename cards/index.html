@@ -8,7 +8,9 @@
   <body>
     <div class="cards1">
       <div class="box">
-        <div class="imgBx"><img src="img1.jpg" alt=""></div>
+        <div class="imgBx">
+          <img src="baleia.jpg" alt="">
+        </div>
         <div class="content">
           <h2>Title</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae neque eaque vitae fuga odit.</p>
@@ -16,7 +18,9 @@
         </div>
       </div>
       <div class="box">
-        <div class="imgBx"><img src="img2.jpg" alt=""></div>
+        <div class="imgBx">
+          <img src="orca.jpg" alt="">
+        </div>
         <div class="content">
           <h2>Title</h2>
           <p>Quasi eius natus perspiciatis inventore ex quas molestiae corrupti quo, repellat a, quam ullam.</p>
@@ -24,7 +28,9 @@
         </div>
       </div>
       <div class="box">
-        <div class="imgBx"><img src="img3.jpg" alt=""></div>
+        <div class="imgBx">
+          <img src="tubaraoBaleia.jpg" alt="">
+        </div>
         <div class="content">
           <h2>Title</h2>
           <p>Aperiam non, facilis eos recusandae similique cum enim eligendi consequuntur repudiandae illo consequatur nihil!</p>
@@ -32,7 +38,9 @@
         </div>
       </div>
       <div class="box">
-        <div class="imgBx"><img src="img4.jpg" alt=""></div>
+        <div class="imgBx">
+          <img src="lobo.jpg" alt="">
+        </div>
         <div class="content">
           <h2>Title</h2>
           <p>Nihil excepturi ipsam amet, reiciendis illum corrupti, eaque consectetur, dolores ab consequatur dignissimos! Ducimus.</p>
@@ -40,5 +48,39 @@
         </div>
       </div>
     </div>
+    <style>
+      .cards1 {
+        position: relative;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        font-family: consolas;
+      }
+      .cards1 .box {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .cards1 .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        clip-path: circle(400px at center 100px);
+        transition: 0.5s;
+        transition-delay: 0.5s;
+      }
+      .cards1 .box:hover .imgBx {
+        clip-path: circle(80px at center 100px);
+        transition-delay: 0s;
+      }
+    </style>
   </body>
 </html>
